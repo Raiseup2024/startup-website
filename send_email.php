@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $recipient = "info@scoresandvalues.com";
 
         // Additional headers
-        $headers = "From: $name <$email>";
+        $headers = "From: $name <$email> <$phone>";
 
         // Send email
         if (mail($recipient, $comments, $headers)) {
